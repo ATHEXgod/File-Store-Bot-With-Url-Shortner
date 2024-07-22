@@ -9,7 +9,7 @@ class Config(object):
     SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "vnshortener.com")
     SHORTLINK_API = os.environ.get('SHORTLINK_API', "2c5ffd5d9400ea9d263b308f53c315acc227f486")
     BOT_OWNER = int(os.environ.get("7208155074", ""))
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    DATABASE_URL = os.environ.get("mongodb+srv://moditrathor:<password>@cluster0.sdkc4bt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", "")
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
